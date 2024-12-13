@@ -1,0 +1,86 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #f1f1f1;
+  }
+  
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  
+  h1, h2, h3 {
+    color: #4CAF50;
+  }
+  
+  /* Header */
+  #header {
+    background: linear-gradient(120deg, #4CAF50, #3E8E41);
+    color: white;
+    padding: 50px 0;
+  }
+  
+  .header-text {
+    text-align: center;
+  }
+  
+  .header-text span {
+    color: #FFD700;
+  }
+  
+  .tagline {
+    background: #FFD700;
+    color: #333;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5px;
+  }
+  
+  /* Services */
+  .services-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .services-list div {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .services-list div:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+  }
+  
+  /* Portfolio */
+  .work img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .layer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .work:hover .layer {
+    opacity: 1;
+  }
+  

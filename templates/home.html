@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mr. Tayyab's Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <a href="#"><img src="images/logo.png" class="logo" alt="Logo"></a>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p class="tagline">Crafting Exceptional Web Experiences</p>
+        <h1>Hi, I'm <span>Tayyab</span></h1>
+        <h2>Full Stack Developer from New Delhi, India</h2>
+      </div>
+    </div>
+  </div>
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.jpg" alt="Tayyab">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>As a full-stack developer, I specialize in technologies like HTML, CSS, JavaScript, Bootstrap, React.js, and backend systems like MySQL and Python. I strive to build responsive, scalable, and user-friendly web applications.</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Front-end Development</span> - HTML, CSS, JavaScript, React.js</li>
+              <li><span>Back-end Development</span> - Python, MySQL, PHP</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2015 to Present:</span> Tutor with over 5 years of experience in Computer Science and Business Studies.</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2023:</span> MCA - Master of Computer Applications</li>
+              <li><span>2020:</span> BCA - Bachelor of Computer Applications</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa fa-code" aria-hidden="true"></i>
+          <h2>Front-end Development</h2>
+          <p>Creating visually appealing and responsive designs.</p>
+        </div>
+        <div>
+          <i class="fa fa-database" aria-hidden="true"></i>
+          <h2>Back-end Development</h2>
+          <p>Building secure and efficient backend systems.</p>
+        </div>
+        <div>
+          <i class="fa fa-crop" aria-hidden="true"></i>
+          <h2>UI/UX Design</h2>
+          <p>Designing user-friendly interfaces for web applications.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/a6.jpg" alt="E-Commerce">
+          <div class="layer">
+            <h3>E-Commerce Website</h3>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> tayyab@example.com</p>
+          <p><i class="fa-solid fa-square-phone"></i> +91-12345-67890</p>
+        </div>
+        <div class="contact-right">
+          <form>
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="email" name="email" placeholder="Your Email">
+            <textarea name="message" rows="6" placeholder="Write your message here..."></textarea>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

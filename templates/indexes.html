@@ -1,0 +1,327 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mr. Tayyab's Portfolio</title>
+        
+        <!-- <link rel="stylesheet" href="style.css"> -->
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+        <link rel="stylesheet" href="fonts/all.min.css">
+        <link rel="stylesheet" href="fonts/fontawesome.min.css">
+
+
+    </head>
+    <body>
+        <div id="header">
+       <div class="container">
+        <nav>
+
+            <a href="#"><img src="images/logo.png" class="logo"></a>
+
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text"> 
+            <p>Full Stack Developer</p>
+            <h1> Hi, I'm <span>Tayyab</span></h1>
+                <h2>from New Delhi, India.</h2>
+    </div>
+
+</div>
+        </div>
+          
+        <div id="about">
+
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>  As a full stack web developer, I have a good knowledge in web development technologies
+                     such as HTML5, CSS, javaScript, Bootstrap, React js, Java, Python, PHP, C++.
+                     I'm also proficient in working with database like MySQL, which enables me to manage data effectively.
+                     I am confident in my abilities to develop websites that meet all the needs of clients. 
+                    
+                </p> 
+                    
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                     </div>
+
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-end Development</span>
+                                <p>Html, CSS, JavaScript, Bootstrap, React js</p></li><br>
+                            
+                            <li><span>Back-end Development</span>
+                            <p> MySQL, Php, Java, Python</p></li>
+
+
+                        <!--------   <li><span>UI/UX</span><br>Designing Web/App interfaces</li>        ----->
+
+                            
+                        </ul>
+
+                     </div>
+                     <div class="tab-contents" id="experience">
+                        <ul>
+                         
+                         <!----  
+                             <li><span>2021-Current</span><br>UI/UX Design Training at ET Institute</li>
+                            <li><span>2019-2021</span><br>Team leat at StarApp LLC.</li>
+                            <li><span>2017-2019</span><br>Internship at Ekart E-Commerce</li>  
+                            
+                         ----------------------------------->
+
+                         <li><span>2015 to present</span><br><br><p>Tutor with 5+ years of experience teaching <br>
+                            Computer Science, Maths, Accounts, Business, English. <br>
+                            Skilled at conveying complex knowledge in a simple and concise way. </p>
+                        </li>
+          
+                        </ul>
+
+                     </div>
+                     
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            
+                            <li><span>2023</span><br>Master of Computer Applications (MCA)</li>
+                            <li><span>2020</span><br>Bachelor of Computer Applications (BCA)</li>
+                            <li><span>2018</span><br>Advance Diploma in Software Engeering</li>
+                            <li><span>2017</span><br>Business Professional Programmer (O level)</li>
+                            <li><span>2014</span><br>12th (CBSE)</li>
+                            <li><span>2012</span><br>10th (CBSE)</li>
+                            
+                            
+                
+                        </ul>
+
+             </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------services--------------------->
+
+    <div id="services">
+
+        <div class="container">
+            <h1 class="sub-title"> My Services</h1>
+            <div class="services-list">
+            
+                <div>
+
+
+                    <i class="fa fa-code" aria-hidden="true"></i>
+
+
+                      <h2>Front-end Development</h2>
+                    <p> I develop responsive websites that look good, be easy to use and
+                        work on any device at any resolution.</p>
+
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    
+                    
+                    <i class="fa fa-database" aria-hidden="true"></i>
+
+                    <h2> Back-end Development</h2>
+                    <p> I build and maintain the backend mechanisms that process 
+                        data and perform actions on websites and responsible for 
+                        storing, retrieving, security and organizing data.
+                    </p>
+
+                    <a href="#">learn more</a>
+                </div>          
+
+                      <div>
+
+                        <i class="fa fa-crop" aria-hidden="true"></i>
+
+                    <h2>UI/UX Design</h2>
+                    <p> I create user-friendly interfaces that enable users to understand and engage
+                        with a digital product.
+                     </p>
+
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+     </div>
+
+    </div>
+
+    <!----------------------portfoilio--------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Work </h1>
+            <div class="work-list">
+
+                <div class="work">
+                <img src="images/a6.jpg">
+
+                <div class="layer">
+                    <h3>E-Commerce Website</h3>
+                                      
+                    <a href="https://stylish-clothes-zone.netlify.app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+                
+            
+            <div class="work">
+            <img src="images/banner.png">
+
+            <div class="layer">
+                <h3>Educational & Business Website</h3>
+                <p></p>
+                <a href="https://tayyab-academy.netlify.app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+
+            </div>
+
+        </div>
+
+            
+            <div class="work">
+                <img src="images/scr-port.png">
+
+                <div class="layer">
+                    <h3>Portfolio Website</h3>
+                    <p></p>
+                    <a href="https://tayyab-portfolio-taby.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                </div>
+                </div>
+
+                
+            </div>
+
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+
+    <!--------------------------------------Contact--------------------------------->
+
+         <div id="contact">
+            <div class="container">
+                <div class="row">
+
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                       
+                       
+                        <p><i class="fa-solid fa-paper-plane"></i>t971279@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>8860620227</p>
+                        
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/tayyab971/"><i class="fa-brands fa-linkedin"></i> <h6>linkedin</h6></a>
+                        </div>
+                        
+                    <a href="images/Tayyab Web Developer.pdf"  download class="btn btn2">Download CV </a>
+                    </div>
+
+    <!-----------------------------------------------Contact form ----------------------------------->
+
+                    <div class="contact-right">
+                    
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Write your message here..."></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+
+                        </form>
+
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>Copyright &copy; Tayyab </p><br><p>Made with <i class="fa-solid fa-heart"></i> by Tech_Tayyab</p>
+            </div>
+        </div>
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+
+            
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxNj4X-Lb3ECgGLV1VjURuf1O_QQxogZQWMTLjYtqpOp2zBSK_DqhiH3OYdR26DAjk/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+    </body>
+</html>
